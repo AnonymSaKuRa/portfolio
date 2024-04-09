@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="jp">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>about</title>
+    <link rel="stylesheet" href="https://unpkg.com/modern-css-reset/dist/reset.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <header class="about-header">
+        <div class="shutter">about</div>
+
+        <div class="inner">
+            <div class="header__flex">
+                <a href="index.html">
+                    <h1 class="header__ttl">portfolio</h1>
+                </a>
+                <nav class="header__nav nav">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="index.html" class="nav__link">home</a></li>
+                        <li class="nav__item"><a href="about.html" class="nav__link">about</a></li>
+                        <li class="nav__item"><a href="index.html#works" class="nav__link">works</a></li>
+                    </ul>
+                </nav>
+                <div class="menu-btn">
+                    <div class="bar top-bar"></div>
+                    <div class="bar bottom-bar"></div>
+                </div>
+            </div>
+            <div class="menu-contents">
+                <ul class="contents-list">
+                    <li class="contents-item"><a href="index.html" class="contents-link">home</a></li>
+                    <li class="contents-item"><a href="about.html" class="contents-link">about</a></li>
+                    <li class="contents-item"><a href="index.html#works" class="contents-link">works</a></li>
+                </ul>
+            </div>
+
+            <div class="wrapper"></div>
+        </div>
+    </header>
+
+    <main class="main">
+        <section class="about">
+            <div class="inner">
+                <div class="about__flex">
+                    <div class="about__contents">
+                        <dl class="about__name">
+                            <dt>櫻井陸志</dt>
+                            <dd>Sakurai Rikusi</dd>
+                        </dl>
+                        <dl class="about__affiliation">
+                            <dt>トライデントコンピュータ専門学校</dt>
+                            <dd>Webデザイン学科</dd>
+                        </dl>
+                        <p class="about__hobby">
+                            フロントエンドエンジニア志望。<br>
+                            進撃の巨人、プレミアリーグが好き。<br>
+                        </p>
+                        <p class="about__hobby">
+                            好きなチームはマンチェスター・シティ、<span>好きな選手はケビン・デ・ブライネ。</span>
+                        </p>
+                    </div>
+                    <img src="./images/myicon.jpg" alt="私の写真" class="about__pic">
+                </div>
+            </div>
+        </section>
+
+        <section class="career">
+            <div class="inner">
+                <h2 class="career__ttl">経歴</h2>
+                <div class="career__item">
+                    <dl class="career__list">
+                        <dt>2002年</dt>
+                        <dd>岐阜県羽島市に生まれる</dd>
+                    </dl>
+                    <dl class="career__list">
+                        <dt>2018年</dt>
+                        <dd>羽島市立羽島中学校を卒業</dd>
+                    </dl>
+                    <dl class="career__list">
+                        <dt>2018年</dt>
+                        <dd>岐阜県立羽島高等学校普通科に入学</dd>
+                    </dl>
+                    <dl class="career__list">
+                        <dt>2021年</dt>
+                        <dd>高校卒業</dd>
+                    </dl>
+                    <dl class="career__list">
+                        <dt>2021年</dt>
+                        <dd>トライデントコンピュータ専門学校<span>ゲームサイエンス学科入学</span></dd>
+                    </dl>
+                    <dl class="career__list">
+                        <dt>2023年</dt>
+                        <dd>トライデントコンピュータ専門学校<span>Webデザイン学科転科</span></dd>
+                    </dl>
+                </div>
+                <div class="career__introduction">
+                    <p>ポートフォリオをご覧いただきありがとうございます。制作者の櫻井陸志です。簡単にこれまでの経歴を紹介します。</p>
+                    <p>
+                        岐阜県羽島市出身で、高校は普通科の学校に通っていました。そのため、本格的にPCを触り始めたのはトライデントに入学してからです。<br>
+                    </p>
+                    <p>
+                        21年にゲームサイエンス学科に入学しましたが、1年の休学を経て23年に現在のWebデザイン学科に転科しました。
+                    </p>
+                    <p>
+                        理由は、自分のやりたいことを見直したかったからです。<br>
+                        私はゲームやアニメ関連のエンタメ系の仕事をしたいと思っており、休学期間に職業について調べていました。
+                    </p>
+                    <p>
+                        そこでWebサイトの仕事を見つけ、プログラミングを学んでみたところ自分が理解しやすく、
+                        エンタメ系の業界に関われるということを知り、Webデザイン学科に入ることを決めました。
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <a href="#" class="go-top-btn">ページトップへ</a>
+        <div class="inner">
+            <small>&copy;Sakurai Rikushi</small>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.3/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/ScrollTrigger.min.js"></script>
+    <script src="./js/about.js"></script>
+</body>
+
+</html>

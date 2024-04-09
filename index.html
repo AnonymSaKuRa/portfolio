@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="jp">
+
+<head prefix="og: https://ogp.me/ns#">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:url" content="https://sakuratairiku.sub.jp/portfolio/index.html" />
+    <meta property="og:type" content="portfolio" />
+    <meta property="og:title" content="portfolio" />
+    <meta property="og:description" content="トライデントコンピュータ専門学校Webデザイン学科に通う学生のポートフォリオです。" />
+    <meta property="og:site_name" content="portfolio" />
+    <meta property="og:image" content="./images/ogp.png" />
+    <title>portfolio</title>
+    <link rel="stylesheet" href="https://unpkg.com/modern-css-reset/dist/reset.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <div class="shutter">portfolio</div>
+
+    <header class="header">
+        <div class="inner">
+            <div class="header__flex">
+                <a href="index.html">
+                    <h1 class="header__ttl">portfolio</h1>
+                </a>
+                <nav class="header__nav nav">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="index.html" class="nav__link">home</a></li>
+                        <li class="nav__item"><a href="about.html" class="nav__link">about</a></li>
+                        <li class="nav__item"><a href="index.html#works" class="nav__link">works</a></li>
+                    </ul>
+                </nav>
+                <div class="menu-btn">
+                    <div class="bar top-bar"></div>
+                    <div class="bar bottom-bar"></div>
+                </div>
+            </div>
+            <div class="menu-contents">
+                <ul class="contents-list">
+                    <li class="contents-item"><a href="index.html" class="contents-link">home</a></li>
+                    <li class="contents-item"><a href="about.html" class="contents-link">about</a></li>
+                    <li class="contents-item"><a href="index.html#works" class="contents-link">works</a></li>
+                </ul>
+            </div>
+
+            <div class="wrapper"></div>
+
+            <p class="header__mv">portfolio</p>
+
+            <div class="scroll">
+                <div class="scroll__bar"></div>
+                <div class="scroll__circle"></div>
+            </div>
+        </div>
+    </header>
+
+    <main class="main">
+        <section class="about">
+            <div class="inner">
+                <h2 class="ttl">私について</h2>
+                <div class="about__flex">
+                    <div class="about__contents">
+                        <dl class="about__name">
+                            <dt>櫻井陸志</dt>
+                            <dd>Sakurai Rikusi</dd>
+                        </dl>
+                        <dl class="about__affiliation">
+                            <dt>トライデントコンピュータ専門学校</dt>
+                            <dd>Webデザイン学科</dd>
+                        </dl>
+                        <p class="about__hobby">
+                            進撃の巨人、サッカープレミアリーグが好き。<br>
+                            フロントエンドエンジニア志望。
+                        </p>
+                        <a href="about.html" class="about__more">Read More</a>
+                    </div>
+                    <img src="./images/myicon.jpg" alt="私の写真" class="about__pic">
+                </div>
+            </div>
+        </section>
+
+        <section class="works" id="works">
+            <div class="inner">
+                <h2 class="ttl">制作実績</h2>
+                <div class="becoffee">
+                    <h3 class="works__name">作品名：ビー珈琲 Webサイト</h3>
+                    <ul class="works__tools tools">
+                        <li class="tools__list">HTML</li>
+                        <li class="tools__list">CSS</li>
+                        <li class="tools__list">JavaScript</li>
+                        <li class="tools__list">Sass</li>
+                        <li class="tools__list">BEM</li>
+                        <li class="tools__list">GSAP</li>
+                        <li class="tools__list">IntersectionObserver</li>
+                        <li class="tools__list">WordPress</li>
+                        <li class="tools__list">Figma</li>
+                    </ul>
+                </div>
+
+                <div class="blog">
+                    <h3 class="works__name">作品名：SakuraBlog</h3>
+                    <ul class="works__tools tools">
+                        <li class="tools__list">HTML</li>
+                        <li class="tools__list">CSS</li>
+                        <li class="tools__list">JavaScript</li>
+                        <li class="tools__list">WordPress</li>
+                        <li class="tools__list">Sass</li>
+                        <li class="tools__list">BEM</li>
+                        <li class="tools__list">Adobe Illustrator</li>
+                        <li class="tools__list">Adobe Photoshop</li>
+                        <li class="tools__list">Figma</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="works__thumb">
+                <img src="./images/becoffee.png" alt="作品のサムネイル" class="works__thumbnail">
+                <a href="becoffee.html">
+                    <h3 class="works__item item1">ビー珈琲 Webサイト制作</h3>
+                </a>
+                <a href="blog.html">
+                    <h3 class="works__item item2">SakuraBlog</h3>
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <a href="#" class="go-top-btn">ページトップへ</a>
+        <div class="inner">
+            <small>&copy;Sakurai Rikushi</small>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.3/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/ScrollTrigger.min.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
