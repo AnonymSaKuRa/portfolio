@@ -1,6 +1,7 @@
 $font-color: #050505;
 $font-bg: #0040BF;
 $font-sub-color: #01359B;
+$font-blog: #F78799;
 
 @mixin inner($w: (1140/1280)*100%, $mw: 1140px) {
     width: $w;
@@ -41,6 +42,58 @@ a {
 
 .inner {
     @include inner();
+}
+
+.becoffee {
+    a:hover {
+        color: $font-bg;
+        transition: .3s;
+    }
+
+    *::selection {
+        background-color: $font-bg;
+        color: #fff;
+    }
+
+    .shutter {
+        background-color: $font-sub-color;
+    }
+}
+
+.blog {
+    a:hover {
+        color: $font-blog;
+        transition: .3s;
+    }
+
+    *::selection {
+        background-color: $font-blog;
+        color: #fff;
+    }
+
+    .shutter {
+        background-color: $font-blog;
+    }
+
+    .contents .design-modal-open {
+        background-color: $font-blog;
+        border: solid 1px;
+
+        &:hover {
+            color: $font-blog;
+            background-color: #fff;
+        }
+    }
+
+    .go-top-btn {
+        background-color: #F78799;
+        color: #fff;
+
+        &:hover {
+            color: #fff;
+            opacity: .7;
+        }
+    }
 }
 
 .header {
@@ -202,7 +255,7 @@ a {
     }
 
     &__hobby {
-        margin-bottom: (50/16)+em;
+        margin-bottom: (35/16)+em;
     }
 
     &__affiliation,
@@ -237,6 +290,20 @@ a {
 
     &__flex {
         @include flex(flex-start);
+    }
+}
+
+.gmail,
+.git {
+    display: block;
+    width: fit-content;
+    margin-bottom: (20/16)+em;
+    border-bottom: solid 1px;
+    color: $font-sub-color;
+    transition: .3s;
+
+    &:hover {
+        color: #000;
     }
 }
 
@@ -369,22 +436,9 @@ a {
         transition: .3s;
         position: relative;
 
-        &::after {
-            content: "→";
-            display: none;
-            position: absolute;
-            top: -5px;
-            right: 0;
-        }
-
         &:hover {
             border-bottom: none;
             color: #000;
-        }
-
-        &:hover::after {
-            display: block;
-            right: -20px;
         }
     }
 }
@@ -640,6 +694,11 @@ a {
 
 .wrapper {
     display: none;
+}
+
+.bold {
+    font-size: (20/16)+rem;
+    font-weight: bold;
 }
 
 @media (max-width: 550px) {
