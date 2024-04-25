@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head prefix="og: https://ogp.me/ns#">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:url" content="https://sakuratairiku.sub.jp/portfolio/index.html" />
+    <meta property="og:type" content="portfolio" />
+    <meta property="og:title" content="portfolio" />
+    <meta property="og:description" content="トライデントコンピュータ専門学校Webデザイン学科に通う学生のポートフォリオです。" />
+    <meta property="og:site_name" content="portfolio" />
+    <meta property="og:image" content="./images/ogp.png" />
+    <title>勉強内容まとめ</title>
+    <link rel="stylesheet" href="https://unpkg.com/modern-css-reset/dist/reset.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <header class="works-header">
+        <div class="shutter">study</div>
+        <div class="inner">
+            <div class="header__flex">
+                <a href="index.html">
+                    <h1 class="header__ttl">portfolio</h1>
+                </a>
+                <nav class="header__nav nav">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="index.html" class="nav__link">home</a></li>
+                        <li class="nav__item"><a href="about.html" class="nav__link">about</a></li>
+                        <li class="nav__item"><a href="index.html#works" class="nav__link">works</a></li>
+                        <li class="nav__item"><a href="#" class="nav__link">GitHub</a></li>
+                    </ul>
+                </nav>
+                <div class="menu-btn">
+                    <div class="bar top-bar"></div>
+                    <div class="bar bottom-bar"></div>
+                </div>
+            </div>
+            <div class="menu-contents">
+                <ul class="contents-list">
+                    <li class="contents-item"><a href="index.html" class="contents-link">home</a></li>
+                    <li class="contents-item"><a href="about.html" class="contents-link">about</a></li>
+                    <li class="contents-item"><a href="index.html#works" class="contents-link">works</a></li>
+                    <li class="contents-item"><a href="#" class="contents-link">GitHub</a></li>
+                </ul>
+            </div>
+
+            <div class="wrapper"></div>
+        </div>
+    </header>
+
+    <main class="study">
+        <section class="rotateBtn">
+            <div class="infomation">
+                <div class="overlay"></div>
+                <img src="./images/pc.png" alt="pc" class="pc">
+                <div id="circle">
+                    <div class="feature one">
+                        <img src="./images/camera.png" alt="camera">
+                        <div>
+                            <h1>Camera</h1>
+                            <p>Beautiful lens.</p>
+                        </div>
+                    </div>
+                    <div class="feature two">
+                        <img src="./images/processor.png" alt="processor">
+                        <div>
+                            <h2>Processer</h2>
+                            <p>Processor is very importtant.</p>
+                        </div>
+                    </div>
+                    <div class="feature three">
+                        <img src="./images/battery.png" alt="battery">
+                        <div>
+                            <h2>Battery</h2>
+                            <p>Battery is Powerful.</p>
+                        </div>
+                    </div>
+                    <div class="feature four">
+                        <img src="./images/display.png" alt="display">
+                        <div>
+                            <h2>Display</h2>
+                            <p>Beautiful display</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="control">
+                <img src="./images/arrow.png" alt="arrow" id="upBtn">
+                <h3>90度回転ボタン</h3>
+                <img src="./images/arrow.png" alt="arrow" id="downBtn">
+            </div>
+        </section>
+
+        <section class="countdown">
+            <div class="container">
+                <h2>明日までの残り時間は...</h2>
+                <div class="time-container">
+                    <p class="time"><span id="hour"></span>時間</p>
+                    <p class="time"><span id="min"></span>分</p>
+                    <p class="time"><span id="sec"></span>秒</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="modal">
+            <div class="modal__open">モーダルウィンドウを開く</div>
+            <div class="modal__bg"></div>
+            <div class="modal__container">
+                <p>
+                    ダミーテキスト,ダミーテキスト,ダミーテキスト,ダミーテキスト,ダミーテキスト,ダミーテキスト,ダミーテキスト,ダミーテキスト,ダミーテキスト,ダミーテキスト
+                </p>
+                <div class="modal__close">閉じる</div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <a href="#" class="go-top-btn">ページトップへ</a>
+        <div class="inner">
+            <small>&copy;Sakurai Rikushi</small>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.3/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/ScrollTrigger.min.js"></script>
+    <script src="./js/study.js"></script>
+</body>
+
+</html>

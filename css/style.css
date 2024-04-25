@@ -659,6 +659,177 @@ a {
   font-weight: bold;
 }
 
+.study {
+  margin-top: 200px;
+}
+
+.rotateBtn {
+  font-size: 1.2rem;
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(to right, #a45eb1, #ba2063);
+  overflow: hidden;
+  position: relative;
+}
+.rotateBtn .logo-area {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.rotateBtn .logo {
+  width: 20%;
+  height: 20%;
+  margin-right: 12px;
+}
+.rotateBtn .infomation {
+  width: 1000px;
+  height: 1000px;
+  position: absolute;
+  top: 50%;
+  left: -10%;
+  transform: translateY(-50%);
+}
+.rotateBtn #circle {
+  width: 1000px;
+  height: 1000px;
+  position: absolute;
+  border-radius: 50%;
+  top: 0;
+  left: 0;
+  transform: rotate(0deg);
+  transition: 1s;
+}
+.rotateBtn .feature {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  color: #fff;
+}
+.rotateBtn .feature img {
+  width: 70px;
+}
+.rotateBtn .feature div {
+  margin-left: 20px;
+}
+.rotateBtn .feature div a {
+  margin-top: 8px;
+}
+.rotateBtn .one {
+  top: 450px;
+  right: 70px;
+}
+.rotateBtn .two {
+  top: 100px;
+  left: 340px;
+  transform: rotate(-90deg);
+}
+.rotateBtn .three {
+  bottom: 450px;
+  left: 50px;
+  transform: rotate(-180deg);
+}
+.rotateBtn .four {
+  bottom: 150px;
+  right: 370px;
+  transform: rotate(-270deg);
+}
+.rotateBtn .pc {
+  width: 400px;
+  position: absolute;
+  top: 50%;
+  left: 27%;
+  transform: translateY(-50%);
+  z-index: 1;
+}
+.rotateBtn .control {
+  position: absolute;
+  top: 50%;
+  right: 15%;
+  transform: translateY(-50%);
+  text-align: center;
+}
+.rotateBtn .control img {
+  width: 15%;
+}
+.rotateBtn .control h3 {
+  margin: 20px 0;
+  color: #fff;
+}
+.rotateBtn #upBtn {
+  cursor: pointer;
+}
+.rotateBtn #downBtn {
+  cursor: pointer;
+  transform: rotate(-180deg);
+}
+.rotateBtn .overlay {
+  width: 0;
+  height: 0;
+  border-top: 520px solid #fff;
+  border-right: 520px solid transparent;
+  border-bottom: 520px solid #fff;
+  border-left: 520px solid #fff;
+}
+
+.countdown .container {
+  padding: 30px;
+}
+.countdown .time-container {
+  display: flex;
+}
+.countdown .time-container p {
+  margin-right: 30px;
+}
+
+.modal__open, .modal__close {
+  width: 320px;
+  margin: 40px auto;
+  padding: 10px;
+  border: solid 1px blue;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.modal__open:hover, .modal__close:hover {
+  background-color: #0040BF;
+  color: #fff;
+}
+.modal__bg {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  opacity: 0;
+  pointer-events: none;
+  transition: 0.3s;
+}
+.modal__bg.active {
+  background-color: #000;
+  opacity: 0.3;
+}
+.modal__container {
+  padding: 20px;
+  position: absolute;
+  top: 70vw;
+  left: 50%;
+  background-color: #fff;
+  transform: translate(-50%);
+  opacity: 0;
+  transition: 0.3s;
+}
+.modal__container.active {
+  opacity: 1;
+  pointer-events: auto;
+}
+.modal__close {
+  margin: 10px auto;
+}
+
 @media (max-width: 550px) {
   .header {
     height: 70vh;
