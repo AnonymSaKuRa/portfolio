@@ -865,13 +865,84 @@ a {
 .slider .page {
   height: 18px;
   margin: 8px 0;
-  line-height: 18px;
   color: #fff;
+  line-height: 18px;
   -webkit-user-select: none;
      -moz-user-select: none;
           user-select: none;
 }
 
+.thumb .thumb-container {
+  width: 480px;
+  margin: 30px auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.thumb .item-thumb {
+  width: 90px;
+}
+.thumb .item-mv {
+  width: 380px;
+}
+.thumb .changePic {
+  width: 50%;
+  -webkit-animation: imgfade 4s infinite;
+          animation: imgfade 4s infinite;
+  opacity: 0;
+}
+.thumb .box {
+  width: 200px;
+  height: 200px;
+  margin: 50px auto;
+  padding: 100px;
+  background: url(../images/01.jpg) no-repeat center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  font-size: 1.25rem;
+  color: #fff;
+  transition: 0.3s;
+}
+
+@-webkit-keyframes imgfade {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes imgfade {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
 @media (max-width: 550px) {
   .header {
     height: 70vh;

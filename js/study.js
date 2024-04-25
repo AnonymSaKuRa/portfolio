@@ -99,3 +99,40 @@ prev.addEventListener("click", () => {
     }
     page.textContent = `${current + 1}/${images.length}`;
 });
+
+/* サムネイルが切り替わる
+------------------------------------------------------------ */
+const main = document.querySelector(".thumb-main");
+const thumbnails = document.querySelectorAll(".thumb-img");
+
+thumbnails.forEach((thumbnail) => {
+    thumbnail.addEventListener("click", () => {
+        let src = thumbnail.getAttribute("src");
+        main.src = src;
+    });
+});
+
+const img = ["01.jpg", "02.jpg", "03.jpg", "04.jpg"];
+
+let changePic = document.querySelector(".changePic");
+let count = -1;
+
+function picChange() {
+    count++;
+    if (count == img.length) count = 0;
+    changePic.src = `./images/${img[count]}`;
+    setTimeout(picChange, 4000);
+};
+picChange();
+
+const bgImg = ["01.jpg", "02.jpg", "03.jpg", "04.jpg"];
+let changeImg = document.querySelector(".box");
+let counter = -1;
+
+function imgChange() {
+    counter++;
+    if (counter == bgImg.length) counter = 0;
+    changeImg.style.background = `url('../images/${bgImg[counter]}')`;
+    setTimeout(imgChange, 3000);
+}
+imgChange();

@@ -940,6 +940,63 @@ a {
     }
 }
 
+.thumb {
+    .thumb-container {
+        width: 480px;
+        margin: 30px auto;
+        @include flex();
+    }
+
+    .item-thumb {
+        width: 90px;
+    }
+
+    .item-mv {
+        width: 380px;
+    }
+
+    .changePic {
+        width: 50%;
+        animation: imgfade 4s infinite;
+        opacity: 0;
+    }
+
+    .box {
+        width: 200px;
+        height: 200px;
+        margin: 50px auto;
+        padding: 100px;
+        background: url(../images/01.jpg) no-repeat center;
+        @include flex(center, center);
+        flex-wrap: nowrap;
+        font-size: (20/16)+rem;
+        color: #fff;
+        transition: .3s;
+    }
+}
+
+@keyframes imgfade {
+    0% {
+        opacity: 0;
+    }
+
+    25% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    75% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
 @media (max-width: 550px) {
     .header {
         height: 70vh;
