@@ -66,3 +66,36 @@ bg.addEventListener("click", () => {
     container.classList.remove("active");
     bg.classList.remove("active");
 });
+
+/* スライダー
+------------------------------------------------------------ */
+const images = ['01.jpg', '02.jpg', '03.jpg', '04.jpg', '05.jpg'];
+const slideImg = document.querySelector(".slide-img");
+const prev = document.querySelector(".prev");
+const page = document.querySelector(".page");
+const next = document.querySelector(".next");
+let current = 0;
+
+page.textContent = `1/${images.length}`;
+
+next.addEventListener("click", () => {
+    if (current + 1 < images.length) {
+        current++;
+        slideImg.src = `./images/${images[current]}`;
+    } else {
+        current = 0;
+        slideImg.src = `./images/${images[current]}`;
+    }
+    page.textContent = `${current + 1}/${images.length}`;
+});
+
+prev.addEventListener("click", () => {
+    if (current > 0) {
+        current--;
+        slideImg.src = `./images/${images[current]}`;
+    } else {
+        current = images.length - 1;
+        slideImg.src = `./images/${images[current]}`;
+    }
+    page.textContent = `${current + 1}/${images.length}`;
+});
