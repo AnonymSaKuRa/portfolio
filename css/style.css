@@ -432,6 +432,11 @@ a {
 .contents {
   margin-top: 6.25em;
 }
+.contents__text {
+  font-size: 1.125rem;
+  letter-spacing: 0.14em;
+  line-height: 1.6;
+}
 .contents__ttl {
   margin: 6.25em 0 1.25em;
   border-bottom: solid 1px;
@@ -443,6 +448,7 @@ a {
 }
 .contents__item {
   margin-bottom: 0.3125em;
+  font-size: 1.125rem;
 }
 .contents__flex {
   display: flex;
@@ -453,6 +459,31 @@ a {
 }
 .contents__pic {
   width: 40%;
+}
+.contents__wrap {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.contents__wrap .contents__list {
+  width: 30%;
+}
+.contents__wrap .contents__text {
+  width: 60%;
+}
+.contents__text-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.contents__text-wrap .contents__text {
+  width: 45%;
+}
+.contents .hearing .contents__list {
+  margin-top: 3.125em;
+  font-weight: bold;
 }
 .contents .hearing,
 .contents .design {
@@ -608,6 +639,12 @@ a {
 .contents .design-modal-close,
 .contents .code-modal-close {
   margin: 10px auto;
+}
+
+.emphasis {
+  color: red;
+  font-size: 1.25rem;
+  font-weight: bold;
 }
 
 .footer {

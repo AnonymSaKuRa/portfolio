@@ -458,6 +458,12 @@ a {
 .contents {
     margin-top: (100/16)+em;
 
+    &__text {
+        font-size: (18/16)+rem;
+        letter-spacing: 0.14em;
+        line-height: 1.6;
+    }
+
     &__ttl {
         margin: (100/16)+em 0 (20/16)+em;
         border-bottom: solid 1px;
@@ -471,6 +477,7 @@ a {
 
     &__item {
         margin-bottom: (5/16)+em;
+        font-size: (18/16)+rem
     }
 
     &__flex {
@@ -480,6 +487,33 @@ a {
 
     &__pic {
         width: 40%;
+    }
+
+    &__wrap {
+        @include flex(flex-start);
+
+        .contents__list {
+            width: 30%;
+        }
+
+        .contents__text {
+            width: 60%;
+        }
+    }
+
+    &__text-wrap {
+        @include flex(flex-start);
+
+        .contents__text {
+            width: 45%;
+        }
+    }
+
+    .hearing {
+        .contents__list {
+            margin-top: (50/16)+em;
+            font-weight: bold;
+        }
     }
 
     .hearing,
@@ -650,6 +684,12 @@ a {
     .code-modal-close {
         margin: 10px auto;
     }
+}
+
+.emphasis {
+    color: red;
+    font-size: (20/16)+rem;
+    font-weight: bold;
 }
 
 .footer {

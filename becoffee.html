@@ -67,7 +67,8 @@
                         <h3 class="contents__ttl">01.ビー珈琲紹介</h3>
                         <p class="contents__text">
                             岐阜県羽島市竹鼻町にある喫茶店です。<br>
-                            「人が集まる喫茶店」をコンセプトにしているお店で、キッズスペースや個室が用意されており、お子様連れの方や、ビジネス商談も可能になっています。<br>
+                            「人が集まる喫茶店」をコンセプトにしており、キッズスペースや個室が用意されています。<br>
+                            お子様連れの方が多く訪れ、地元の人から人気のある喫茶店です。<br>
                             また、羽島市外から訪れる人もおり、最寄り駅から近く、駐車場も広いため多くの方に利用されているお店です。
                         </p>
 
@@ -83,29 +84,33 @@
                     <section class="container">
                         <h3 class="contents__ttl">02.作品について</h3>
                         <p class="contents__text">
-                            岐阜県羽島市竹鼻町にある喫茶店、ビー珈琲様のWebサイトを作成させていただきました。<br>
-                            実際にお店に伺い、サイトを作成したい事、ポートフォリオに載せたいという事をお願いしに行きました。
-                            ヒアリング、サイト設計、サイトデザイン、コーディング、CMS実装を全て一人で行いました。
+                            岐阜県羽島市竹鼻町にある喫茶店、<span class="emphasis">ビー珈琲様</span>のWebサイトを作成させていただきました。<br>
+                            実際にお店に伺い、サイトを作成したい事、ポートフォリオに載せたいという事をお願いしました。<br>
+                            ヒアリング、サイト設計、サイトデザイン、コーディング、CMS実装など全ての作業を一人で行いました。
                         </p>
                     </section>
 
                     <section class="container">
                         <h3 class="contents__ttl">03.使用ツール</h3>
-                        <ul class="contents__list">
-                            <li class="contents__item">HTML</li>
-                            <li class="contents__item">CSS</li>
-                            <li class="contents__item">JavaScript</li>
-                            <li class="contents__item">Sass</li>
-                            <li class="contents__item">BEM</li>
-                            <li class="contents__item">GSAP</li>
-                            <li class="contents__item">IntersectionObserver</li>
-                            <li class="contents__item">WordPress</li>
-                            <li class="contents__item">Figma</li>
-                        </ul>
-                        <p class="contents__text">
-                            サイトのデザインはFigmaを使って作りました。コーディングはSassとBEMを使ってクラス名をつけ、GSAP、IntersectionObserverを使ってスクロールに合わせた動きをつけています。<br>
-                            サイト内の写真はすべてお店からご提供いただき、加工の必要がないと判断したのでそのまま使用しています。そのため、IllustratorやPhotoshopを使用していません。
-                        </p>
+                        <div class="contents__wrap">
+                            <ul class="contents__list">
+                                <li class="contents__item">HTML</li>
+                                <li class="contents__item">CSS</li>
+                                <li class="contents__item">JavaScript</li>
+                                <li class="contents__item">Sass</li>
+                                <li class="contents__item">BEM</li>
+                                <li class="contents__item">GSAP</li>
+                                <li class="contents__item">IntersectionObserver</li>
+                                <li class="contents__item">WordPress</li>
+                                <li class="contents__item">Figma</li>
+                            </ul>
+                            <p class="contents__text">
+                                サイトのデザインはFigmaを使って作りました。<br>
+                                コーディングはSassとBEMを使ってクラス名をつけ、<span
+                                    class="emphasis">IntersectionObserver、GSAP</span>を使って動きをつけています。<br>
+                                サイト内の写真はすべてお店からご提供いただき、加工の必要がないほどきれいな写真だったので、IllustratorやPhotoshopは使用していません。
+                            </p>
+                        </div>
                     </section>
 
                     <section class="container">
@@ -138,8 +143,9 @@
                     <section class="container">
                         <h3 class="contents__ttl">05.デザイン作成</h3>
                         <p class="contents__text">
-                            サイト制作で意識したことは写真を活かすということです。ご提供いただいた写真は写真部だったパートさんが撮影したものらしく、本当にきれいな写真だったのでそれを活かそうと考えました。<br>
-                            写真を活かすために、トップページでは写真を画面いっぱいに配置したり、テキストの背景画像としても使用しています。他のページでも写真をところどころに使用し、商品やお店の雰囲気を伝えています。
+                            サイト制作で意識したことは<span
+                                class="emphasis">写真を活かす</span>ということです。ご提供いただいた写真は写真部だったパートさんが撮影したものらしく、本当にきれいな写真だったのでそれを活かそうと考えました。<br>
+                            写真を活かすために、トップページでは写真を画面いっぱいに配置したり、テキストの背景画像としても使用しています。他のページでも写真を多めに使用し、商品やお店の雰囲気を伝えています。
                         </p>
                         <div class="contents__flex">
                             <div class="design-pic-area">
@@ -160,11 +166,18 @@
 
                     <section class="container">
                         <h3 class="contents__ttl">06.コーディング</h3>
-                        <p class="contents__text">
-                            今回一番苦戦したところは、サイト内に動きをつけるところでした。写真多めのサイトになったので、文字や要素が少なくなり、スクロールアニメーションをつけれる部分が少なくなってしまいました。そのため、どこにどういった動きをつけるか考え、それを実装できるコードを調べるということに時間を費やしました。<br>
-                            このサイトにはGSAPとIntersectionObserverを使ってスクロールアニメーションをつけました。GSAPはちょうど授業で習い少しでも理解を深めるために使用しました。<br>
-                            IntersectionObserverはスクロールアニメーションを調べていたときに、「スクロールイベントでもできるが、スクロールするたびに反応するためパフォーマンスが良くない。しかし、IntersectionObserverならコードもわかりやすく、毎回反応するということもない」といった記事を見かけたので使ってみることにしました。
-                        </p>
+                        <div class="contents__text-wrap">
+                            <p class="contents__text">
+                                今回一番苦戦したところは、サイト内に動きをつけるところでした。<br>
+                                写真が多いサイトになったので、文字や要素が少なくなり、スクロールアニメーションをつけられる部分が少なくなってしまいました。<br>
+                                そのため、どこにどういった動きをつけるか考えることに時間を費やしました。
+                            </p>
+                            <p class="contents__text">
+                                このサイトにはGSAPとIntersectionObserverを使ってアニメーションをつけています。<br>
+                                GSAPはちょうど授業で習い少しでも理解を深めるために使用しました。<br>
+                                IntersectionObserverはスクロールアニメーションを調べていたときに、「スクロールイベントでもできるが、スクロールするたびに反応するためパフォーマンスが良くない。しかし、IntersectionObserverならコードもわかりやすく、毎回反応するということもない」といった記事を見かけたので使ってみることにしました。
+                            </p>
+                        </div>
                         <div class="contents__flex">
                             <div class="code-pic-area"><img src="./images/gsap.png" alt="gsapコードスクショ"></div>
                             <div class="code-pic-area">
@@ -180,7 +193,6 @@
                             </div>
                         </div>
                     </section>
-
 
                     <section class="container">
                         <h3 class="contents__ttl">07.CMS実装</h3>
