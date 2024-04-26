@@ -332,6 +332,10 @@ a {
         display: none;
     }
 
+    .study {
+        display: none;
+    }
+
 
     &__thumbnail {
         width: (890/1280)*100%;
@@ -375,6 +379,14 @@ a {
         top: 40%;
         right: 0;
         background: url(../images/card-bg.png) no-repeat center/cover;
+        font-weight: normal;
+    }
+
+    .item3 {
+        position: absolute;
+        top: 70%;
+        right: 0;
+        background: url(../images/study.png) no-repeat center/cover;
         font-weight: normal;
     }
 }

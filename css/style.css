@@ -318,6 +318,9 @@ a {
 .works .blog {
   display: none;
 }
+.works .study {
+  display: none;
+}
 .works__thumbnail {
   width: 69.53125%;
   background: url(../images/myicon.jpg) no-repeat center/cover;
@@ -355,6 +358,13 @@ a {
   top: 40%;
   right: 0;
   background: url(../images/card-bg.png) no-repeat center/cover;
+  font-weight: normal;
+}
+.works .item3 {
+  position: absolute;
+  top: 70%;
+  right: 0;
+  background: url(../images/study.png) no-repeat center/cover;
   font-weight: normal;
 }
 

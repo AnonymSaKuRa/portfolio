@@ -1,19 +1,30 @@
 const thumbnail = document.querySelector(".works__thumbnail");
 const becoffee = document.querySelector(".item1");
 const SakuraBlog = document.querySelector(".item2");
+const study = document.querySelector(".item3");
 const becoffeeInfo = document.querySelector(".becoffee");
 const blogInfo = document.querySelector(".blog");
+const studyInfo = document.querySelector(".study");
 
 becoffee.addEventListener("mouseover", () => {
     thumbnail.setAttribute("src", `./images/becoffee.png`);
     becoffeeInfo.style.display = "block";
     blogInfo.style.display = "none";
+    studyInfo.style.display = "none";
 });
 
 SakuraBlog.addEventListener("mouseover", () => {
     thumbnail.setAttribute("src", `./images/SakuraBlog.png`);
     becoffeeInfo.style.display = "none";
     blogInfo.style.display = "block";
+    studyInfo.style.display = "none";
+});
+
+study.addEventListener("mouseover", () => {
+    thumbnail.setAttribute("src", `./images/study.png`);
+    becoffeeInfo.style.display = "none";
+    blogInfo.style.display = "none";
+    studyInfo.style.display = "block";
 });
 
 const ttl = this.document.querySelectorAll(".ttl");
