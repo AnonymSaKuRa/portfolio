@@ -479,7 +479,7 @@ a {
   align-items: flex-start;
 }
 .contents__text-wrap .contents__text {
-  width: 45%;
+  width: 48%;
 }
 .contents .hearing .contents__list {
   margin-top: 3.125em;
@@ -862,7 +862,7 @@ a {
 .modal__container {
   padding: 20px;
   position: absolute;
-  top: 70vw;
+  top: 80vw;
   left: 50%;
   background-color: #fff;
   transform: translate(-50%);
